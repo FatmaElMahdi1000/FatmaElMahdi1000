@@ -8,16 +8,6 @@
 
 <br>
 
-<h1 align="center">Fatma El Mahdi</h1>
-
-<p align="center">
-  <strong>SOFTWARE ENGINEER</strong>
-</p>
-
-<p align="center">
-  Backend Engineering · API Integration · Databases · Software Architecture
-</p>
-
 <p align="center">
   <a href="https://github.com/FatmaElMahdi1000">
     GitHub
