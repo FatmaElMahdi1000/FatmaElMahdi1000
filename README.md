@@ -4,9 +4,11 @@
 
 ## ◆ About Me
 
-Software Engineer focused on **Java and Spring Boot** backend development, with hands-on experience building REST APIs, database-backed applications, external API integrations, and data synchronization workflows. Currently strengthening backend engineering fundamentals through practical projects and postgraduate Computer Science study.
+Software Engineer focused on **Java and Spring Boot** backend development. I build REST APIs, database-backed applications, external API integrations, and data synchronization workflows.
 
-I leverage AI tools for debugging, understanding unfamiliar APIs, exploring implementation approaches, and refactoring discussions—while maintaining focus on real engineering discipline and problem-solving.
+Currently strengthening my backend engineering fundamentals through practical projects and postgraduate Computer Science study.
+
+I use AI tools as a development aid—for debugging, exploring implementation approaches, understanding unfamiliar APIs, and technical research—while maintaining disciplined engineering practices.
 
 ---
 
@@ -24,140 +26,158 @@ I leverage AI tools for debugging, understanding unfamiliar APIs, exploring impl
 ### **API Development**
 `Swagger/OpenAPI` • `Postman` • `MapStruct` • `DTOs` • `RestClient`
 
-### **Infrastructure & DevOps**
-`Docker` • `Docker Compose` • `Redis` • `Linux`
+### **Infrastructure & Tools**
+`Docker` • `Docker Compose` • `Redis` • `Git` • `GitHub` • `IntelliJ IDEA` • `Linux`
 
-### **Build & Tools**
-`Maven` • `Git` • `GitHub` • `IntelliJ IDEA`
-
-### **Testing & Quality**
-`JUnit` • `Mockito`
+### **Build & Quality**
+`Maven` • `JUnit` • `Mockito`
 
 ---
 
-## ◇ Featured Projects
+## ◇ Featured Backend Projects
 
 ### 🔌 [API Integration & Data Synchronization Assessment](https://github.com/FatmaElMahdi1000/API-integration-data-synchronization-Assessment-)
 
-**Java · Spring Boot · REST API · Oracle · Microservices**
+**Java · Spring Boot · REST API · Oracle · External API Integration**
 
-A Spring Boot backend that integrates with an external Assessment API, synchronizes customer users into an internal Oracle database, and exposes synchronized data through REST APIs. Demonstrates production-grade patterns for external API consumption.
+A Spring Boot backend that integrates with an external Assessment API, synchronizes customer data into an internal Oracle database, and exposes the synchronized data through REST endpoints.
 
-**Highlights:**
-- RestClient integration with external API
+**Technical highlights:**
+- RestClient integration with external REST API
 - Data synchronization & reconciliation logic
 - JPA/Hibernate entity mapping with MapStruct
-- Pagination & retry mechanisms
-- Oracle database integration
+- Pagination handling
+- Oracle JDBC integration
 - Swagger/OpenAPI documentation
 - Docker containerization
 
 ---
 
-### 📚 [Bookstore Application](https://github.com/FatmaElMahdi1000/Bookstore-Application-Full-Stack-Learning-Project)
+### 🎯 [BuildersTribe Task Management API](https://github.com/FatmaElMahdi1000/BuildersTribe-ENGINEERING-CASE-STUDY)
+
+**Java · Spring Boot · Spring Security · JWT · Oracle**
+
+A backend task management system emphasizing authentication and user-scoped data access. Demonstrates proper Spring Security configuration, JWT token handling, and secure filtering without exposing other users' data.
+
+**Technical highlights:**
+- Spring Security authentication & authorization
+- JWT token generation and validation
+- User-scoped task filtering
+- Spring Data JPA repositories
+- REST API endpoints
+- Swagger documentation
+
+---
+
+### 📚 [Bookstore Management System](https://github.com/FatmaElMahdi1000/Bookstore-Application-Full-Stack-Learning-Project)
 
 **Java · Spring Boot · JPA · Oracle · REST APIs**
 
-A full-stack bookstore management system emphasizing backend architecture and business logic. Covers customer management, book inventory, order processing, and cart operations.
+A backend bookstore system covering customer management, inventory, order processing, and cart operations. Emphasizes backend architecture and business logic.
 
-**Highlights:**
+**Technical highlights:**
 - Spring Boot REST API layer
-- Spring Data JPA with entity relationships
+- Spring Data JPA with entity relationships (one-to-many, many-to-many)
 - Oracle database schema design
-- Transaction management & data consistency
+- Transaction management
 - Maven build configuration
 
 ---
 
 ### ✓ [Multi-User Task Management System](https://github.com/FatmaElMahdi1000/Multi-User_Task_Management_System_DeskTop_App)
 
-**Java · Swing · Oracle · JDBC · Architecture**
+**Java · Swing · Oracle · JDBC · Layered Architecture**
 
-A desktop task management application prioritizing software architecture, object-oriented design, and layered patterns over UI sophistication. Demonstrates DAO pattern, prepared statements, and user authentication.
+A desktop application prioritizing software architecture and OOP design over UI sophistication. Demonstrates layered architecture, DAO pattern, and proper database integration.
 
-**Highlights:**
-- Layered architecture (Presentation · Service · Data Access)
+**Technical highlights:**
+- Layered architecture (Presentation → Service → Data Access)
 - DAO pattern for database abstraction
-- User authentication & authorization
+- User authentication & task isolation
 - Prepared statements for SQL injection prevention
 - Oracle JDBC integration
 
 ---
 
-### 🤖 [Domain MT with LLM Post-Editing](https://github.com/FatmaElMahdi1000/Domain-MT-LLM-postediting-Paper-Research-Implementation-)
+### 🤖 [Domain-Aware Machine Translation with LLM Post-Editing](https://github.com/FatmaElMahdi1000/Domain-MT-LLM-postediting-Paper-Research-Implementation-)
 
-**Python · Hugging Face · MarianMT · PyTorch · Google GenAI**
+**Python · MarianMT · Hugging Face · PyTorch · Google GenAI**
 
-Research implementation combining machine translation, terminology management, and LLM-assisted post-editing. Based on academic paper on terminology-aware MT pipelines.
+Research implementation combining neural machine translation, terminology management, and LLM-assisted post-editing. Based on academic research in terminology-aware MT pipelines.
 
-**Highlights:**
+**Technical highlights:**
 - MarianMT transformer models
-- Terminology memory integration
+- Terminology memory (TM) integration
 - Google Generative AI for post-editing
-- TBX (TermBase eXchange) export
-- Pandas data manipulation
+- TBX export format
+- Pandas data processing
 - PyTorch model inference
 
 ---
 
-### 🎯 [BuildersTribe Task API](https://github.com/FatmaElMahdi1000/BuildersTribe-ENGINEERING-CASE-STUDY)
-
-**Java · Spring Boot · Spring Security · JWT · Oracle**
-
-A backend task management system prioritizing authenticated, user-scoped task access. Implements Spring Security, JWT authentication, and flexible filtering without exposing other users' data.
-
-**Highlights:**
-- Spring Security & JWT token authentication
-- User-scoped data isolation
-- Flexible query filtering
-- Spring Data JPA repositories
-- Swagger API documentation
-
----
-
-## 🏗️ Backend Architecture Patterns
+## 🏗️ Backend Engineering Focus
 
 ```
 Client Request
-        ↓
+    ↓
 REST Controller (HTTP Layer)
-        ↓
+    ↓
 DTO Validation & Mapping
-        ↓
+    ↓
 Service Layer (Business Logic)
-        ↓
+    ↓
 Repository Pattern (Data Access)
-        ↓
+    ↓
 JPA/Hibernate (ORM)
-        ↓
+    ↓
 Oracle Database
 ```
 
-**Key Principles:**
+**Core principles I follow:**
+
 - Separation of concerns (Controller → Service → Repository)
-- DTO mapping with MapStruct
+- DTOs for API boundaries
+- MapStruct for object mapping
 - Transaction boundaries at service layer
 - Repository abstraction for database independence
-- Exception handling and logging across layers
+- Proper exception handling and logging
 
 ---
 
-## 🧪 Testing Approach
+## 🧪 Testing
 
-- **Unit Testing:** JUnit with Mockito for service & repository isolation
-- **Integration Testing:** Spring Test with embedded databases
+- **Unit Testing:** JUnit with Mockito for service & repository layer testing
+- **Isolation:** Mocking external dependencies and database calls
 - **API Testing:** Postman for endpoint validation
-- **Edge Cases:** Null handling, boundary conditions, concurrent access
+- **Edge Cases:** Null handling, boundary conditions, concurrent access scenarios
 
 ---
 
-## 🚀 Currently Learning
+## 📚 Currently Learning
 
-- Advanced Spring Boot microservices patterns
-- Spring Cloud (Config, Discovery, Load Balancing)
-- Event-driven architecture
-- High-performance database optimization
-- Kubernetes container orchestration
+- Advanced Java fundamentals
+- Spring Boot best practices and patterns
+- REST API design principles
+- Spring Security configuration
+- JPA/Hibernate advanced patterns
+- Oracle SQL optimization
+- Unit testing strategies with JUnit and Mockito
+- Clean code and backend architecture
+
+---
+
+## 🧠 AI-Assisted Development
+
+I use AI tools as a development aid for:
+
+- Debugging runtime issues and stack traces
+- Exploring implementation approaches
+- Understanding unfamiliar APIs and frameworks
+- Generating test ideas and test cases
+- Refactoring discussions and code review
+- Technical research and documentation
+
+AI is a tool to enhance productivity, not a replacement for engineering discipline and problem-solving.
 
 ---
 
@@ -177,10 +197,10 @@ Oracle Database
 ---
 
 <div align="center">
-  
+
 **"The only true wisdom is in knowing you know nothing." — Socrates**
 
-*A Software Engineer pursuing backend mastery, one Spring Boot application at a time.*
+*A Software Engineer pursuing backend mastery.*
 
 ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=FatmaElMahdi1000)
 
