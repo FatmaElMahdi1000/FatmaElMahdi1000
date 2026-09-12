@@ -1,0 +1,30 @@
+Wednesday theme image (Unsplash)
+
+I selected a Wednesday-style gothic portrait from Unsplash using the query shown below. Unsplash photos are free to use under the Unsplash License (see link).
+
+Source (query used):
+https://source.unsplash.com/1600x900/?wednesday,addams,gothic
+
+Notes for credits and fixed-photo selection:
+- The URL above returns a high-quality Unsplash photo matching the query each time it is requested. Because the result can change, if you want a fixed photo that never changes, follow these steps locally:
+
+  1. Run the fetch script to download the current photo into the repo:
+     bash assets/images/fetch-wednesday.sh
+
+  2. Find the Unsplash landing page for the downloaded image. To do that, open the downloaded file in a browser and click "Info" or go to the image details on Unsplash. Alternatively, you can run the following to get the final redirected URL used by the script (on macOS/Linux):
+
+     curl -sI "https://source.unsplash.com/1600x900/?wednesday,addams,gothic" | awk -F 'Location: ' '/Location/ {print $2}' | tr -d '\r' | xargs -n1 echo
+
+     The output will include a direct Unsplash image URL. You can open it in a browser to get the photographer name and Unsplash page.
+
+  3. Update this file with the photographer's name and Unsplash page URL, then commit:
+
+     git add assets/images/wednesday-bg.jpg assets/images/unsplash-credits.txt
+     git commit -m "feat(assets): add Wednesday background and photographer credit"
+     git push
+
+Unsplash license:
+https://unsplash.com/license
+
+Attribution (recommended):
+Photo by <photographer name> on Unsplash — replace after step 2 above.
