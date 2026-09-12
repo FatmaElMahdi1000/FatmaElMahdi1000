@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="./assets/nevermore-terminal.svg"
+    src="download.svg"
     width="100%"
     alt="Nevermore inspired software engineering banner"
   />
