@@ -7,7 +7,7 @@
 ### `JAVA • SPRING BOOT • BACKEND`
 
 ```text
-╔════════════════════════════════════════════════════════════════════╗
+╔════════════════════════════════════════════════════════════════�[...]
 ║                                                                    ║
 ║                     ☾   NEVERMORE ARCHIVES   ☽                    ║
 ║                                                                    ║
@@ -19,10 +19,10 @@
 ║                                                                    ║
 ║                 "Some problems deserve patience."                 ║
 ║                                                                    ║
-╚════════════════════════════════════════════════════════════════════╝
+╚════════════════════════════════════════════════════════════════�[...]
 ```
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=19&duration=2800&pause=900&color=B9A5C7&center=true&vCenter=true&width=760&height=55&lines=Software+Engineer;Java+%7C+Spring+Boot+%7C+Backend;JPA+%7C+Hibernate+%7C+JDBC;Oracle+SQL+%7C+Redis+%7C+Docker;REST+APIs+%7C+Swagger+%7C+Postman"
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=19&duration=2800&pause=900&color=B9A5C7&center=true&vCenter=true&width=760&height=55&lines=Software+Engineer;Java+%7[...]
 alt="Software Engineer"
 />
 
@@ -186,7 +186,7 @@ BUILD / VERSION CONTROL
 ```text
                     ┌─────────────────────┐
                     │      REST API       │
-                    └──────────┬──────────┘
+                    └────────��─┬──────────┘
                                │
                                ▼
                     ┌─────────────────────┐
@@ -317,7 +317,7 @@ Implemented concepts include:
 
 ### ☾ Bookstore Application
 
-**Backend-focused e-commerce application**
+**Backend-focused e-commerce application**n
 
 `Java` `Spring Boot` `JPA` `Hibernate` `Oracle` `Maven` `REST`
 
@@ -472,11 +472,6 @@ JAVA BACKEND
 [██████████████████░░] Java
 [█████████████████░░░] Spring Boot
 [████████████████░░░░] REST API Design
-[███████████████░░░░░] Spring Security
-[███████████████░░░░░] Oracle SQL
-[██████████████░░░░░░] JUnit / Mockito
-[█████████████░░░░░░░] Docker
-[████████████░░░░░░░░] Redis
 [███████████░░░░░░░░░] Backend Architecture
 ```
 
@@ -504,7 +499,7 @@ JAVA BACKEND
 <div align="center">
 
 <img
-src="https://github-readme-stats.vercel.app/api?username=FatmaElMahdi1000&show_icons=true&hide_border=true&bg_color=0D0D0F&title_color=B9A5C7&text_color=D8D2DC&icon_color=8F6B91&include_all_commits=true"
+src="https://github-readme-stats.vercel.app/api?username=FatmaElMahdi1000&show_icons=true&hide_border=true&bg_color=0D0D0F&title_color=B9A5C7&text_color=D8D2DC&icon_color=8F6B91&include_all_commi[...]
 height="170"
 alt="GitHub statistics"
 />
@@ -571,51 +566,40 @@ alt="GitHub contribution graph"
 
 ---
 
-## `> visitor.log`
+## Wednesday theme (local assets)
+
+I've added a small Wednesday-themed section that will display a local image when you download it into the repository. Because I can't upload copyrighted Netflix images, I selected an Unsplash-style gothic background via a stable Unsplash query.
+
+- Local image path: `assets/images/wednesday-bg.jpg`
+- A download script is included at `assets/images/fetch-wednesday.sh` — run it locally to fetch the image that will then render in README.
+- Hotlink fallback: the README also includes a direct Unsplash hotlink so GitHub will show a preview immediately.
 
 <div align="center">
 
-<img
-src="https://komarev.com/ghpvc/?username=FatmaElMahdi1000&style=for-the-badge&color=3B263D&label=VISITS"
-alt="Profile visit count"
-/>
+<!-- Local image (preferred if file exists) -->
+<img src="assets/images/wednesday-bg.jpg" alt="Wednesday-style background (local)" style="max-width:100%;height:auto;" />
 
-<br><br>
+<!-- Unsplash fallback (will render on GitHub immediately) -->
 
-<sub>
-Visitor identities are not exposed by GitHub.
-Only the aggregate visit count is displayed publicly.
-</sub>
+
+<br>
 
 </div>
 
 ---
 
-## `> connect`
+## How to fetch the image into the repo (optional)
 
-<div align="center">
+If you want the image stored in the repository (so it renders for anyone cloning the repo), run the included script from the repository root:
 
-<a href="https://github.com/FatmaElMahdi1000">
-<img src="https://img.shields.io/badge/GitHub-0D0D0F?style=for-the-badge&logo=github&logoColor=E8E3EA" alt="GitHub">
-</a>
-
-<a href="https://www.linkedin.com/in/fatma-el-mahdi-837a80177/">
-<img src="https://img.shields.io/badge/LinkedIn-0D0D0F?style=for-the-badge&logo=linkedin&logoColor=B9A5C7" alt="LinkedIn">
-</a>
-
-</div>
-
-<br>
-
-<div align="center">
-
-```text
-                 ☾  NEVERMORE  ☽
-
-       software-engineer@backend:~$ _
+```bash
+bash assets/images/fetch-wednesday.sh
 ```
 
-<sub>Java • Spring Boot • Backend Engineering</sub>
+This downloads a curated Wednesday-style background from Unsplash into `assets/images/wednesday-bg.jpg`.
 
-</div>
+---
 
+## Credits
+
+See `assets/images/unsplash-credits.txt` for the source info and Unsplash license notes.
