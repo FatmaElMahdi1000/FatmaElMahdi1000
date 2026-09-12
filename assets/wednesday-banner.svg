@@ -17,10 +17,6 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    
-    <filter id="shadow">
-      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.4"/>
-    </filter>
   </defs>
   
   <!-- Dark academia background -->
