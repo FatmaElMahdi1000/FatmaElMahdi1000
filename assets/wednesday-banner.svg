@@ -1,0 +1,84 @@
+<svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="darkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a0f1f;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="moonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8d5c4;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#c9a86b;stop-opacity:0.7" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Dark academia background -->
+  <rect width="1200" height="400" fill="url(#darkBg)"/>
+  
+  <!-- Subtle spiderweb elements -->
+  <path d="M 100 50 Q 150 80 120 130" stroke="#4a3a52" stroke-width="0.8" fill="none" opacity="0.3"/>
+  <path d="M 120 130 L 160 180" stroke="#4a3a52" stroke-width="0.8" fill="none" opacity="0.3"/>
+  <path d="M 160 180 Q 140 200 100 180" stroke="#4a3a52" stroke-width="0.8" fill="none" opacity="0.3"/>
+  
+  <!-- Right side spiderweb -->
+  <path d="M 1100 60 Q 1050 90 1070 140" stroke="#4a3a52" stroke-width="0.8" fill="none" opacity="0.3"/>
+  <path d="M 1070 140 L 1020 190" stroke="#4a3a52" stroke-width="0.8" fill="none" opacity="0.3"/>
+  <path d="M 1020 190 Q 1050 210 1100 190" stroke="#4a3a52" stroke-width="0.8" fill="none" opacity="0.3"/>
+  
+  <!-- Gothic moon in background -->
+  <circle cx="1050" cy="80" r="50" fill="url(#moonGlow)" opacity="0.4"/>
+  <circle cx="1050" cy="80" r="50" fill="none" stroke="#8b6f47" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Crescent detail -->
+  <circle cx="1065" cy="70" r="48" fill="#0a0a0a" opacity="0.8"/>
+  
+  <!-- Minor moon glow -->
+  <circle cx="150" cy="320" r="35" fill="#4a3f5c" opacity="0.15"/>
+  
+  <!-- Gothic vertical lines (pillars/architecture) -->
+  <line x1="50" y1="100" x2="50" y2="350" stroke="#3a2a42" stroke-width="2" opacity="0.4"/>
+  <line x1="1150" y1="100" x2="1150" y2="350" stroke="#3a2a42" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Decorative elements (◈ ◇ ✦) -->
+  <text x="140" y="40" font-size="24" fill="#7a5a7f" opacity="0.6" font-family="serif">◈</text>
+  <text x="1050" y="360" font-size="20" fill="#7a5a7f" opacity="0.6" font-family="serif">◇</text>
+  
+  <!-- Main title: FATMA EL MAHDI -->
+  <text x="600" y="140" font-size="48" font-weight="bold" fill="#e8d5c4" text-anchor="middle" font-family="Georgia, serif" letter-spacing="3">
+    FATMA EL MAHDI
+  </text>
+  
+  <!-- Subtitle: SOFTWARE ENGINEER -->
+  <text x="600" y="210" font-size="32" fill="#c9a86b" text-anchor="middle" font-family="Georgia, serif" letter-spacing="2">
+    SOFTWARE ENGINEER
+  </text>
+  
+  <!-- Core stack -->
+  <text x="600" y="280" font-size="20" fill="#b8a8b8" text-anchor="middle" font-family="monospace" letter-spacing="1">
+    JAVA • SPRING BOOT • BACKEND
+  </text>
+  
+  <!-- Additional focus -->
+  <text x="600" y="320" font-size="16" fill="#9a8a9a" text-anchor="middle" font-family="monospace" letter-spacing="1">
+    REST APIs • Oracle • Microservices
+  </text>
+  
+  <!-- Terminal cursor effect -->
+  <rect x="605" y="325" width="3" height="20" fill="#c9a86b" opacity="0.8">
+    <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Bottom decorative line -->
+  <line x1="200" y1="380" x2="1000" y2="380" stroke="#7a5a7f" stroke-width="1" opacity="0.4"/>
+</svg>
