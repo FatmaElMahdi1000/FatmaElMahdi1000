@@ -1,9 +1,7 @@
-<!--
-╔══════════════════════════════════════════════════════════════╗
-║              FATMA EL MAHDI — PROFILE README                ║
-║        Nevermore-inspired software engineering profile       ║
-╚══════════════════════════════════════════════════════════════╝
--->
+<!-- =========================================================
+     FATMA EL MAHDI — GITHUB PROFILE
+     Nevermore-inspired Software Engineering theme
+========================================================= -->
 
 <p align="center">
   <img
@@ -13,274 +11,401 @@
   />
 </p>
 
-<h1 align="center">Fatma El Mahdi</h1>
+<br>
+
+<h1 align="center">
+  FATMA EL MAHDI
+</h1>
 
 <h3 align="center">
-  Software Engineer · Backend & API Development
+  SOFTWARE ENGINEER
 </h3>
 
 <p align="center">
-  Building backend systems, integrating APIs, working with databases,
-  and occasionally questioning why the code worked five minutes ago.
+  Backend Engineering · API Integration · Databases · Software Architecture
 </p>
 
 <p align="center">
-
-<a href="https://github.com/FatmaElMahdi1000">
-<img src="https://img.shields.io/badge/GitHub-111111?style=flat-square&logo=github&logoColor=white"/>
-</a>
-
-<a href="https://www.linkedin.com/in/fatma-el-mahdi-837a80177/">
-<img src="https://img.shields.io/badge/LinkedIn-111111?style=flat-square&logo=linkedin&logoColor=white"/>
-</a>
-
+  <a href="https://github.com/FatmaElMahdi1000">
+    <img src="https://img.shields.io/badge/GitHub-181818?style=flat-square&logo=github&logoColor=white">
+  </a>
+  <a href="https://www.linkedin.com/in/fatma-el-mahdi-837a80177/">
+    <img src="https://img.shields.io/badge/LinkedIn-181818?style=flat-square&logo=linkedin&logoColor=white">
+  </a>
 </p>
 
 ---
 
-## ⟡ `ABOUT`
+## ⟡ SOFTWARE ENGINEER
 
-I'm a **Software Engineer focused on backend development**, currently deepening my Computer Science background while building practical software systems.
+I'm a **Software Engineer focused on backend development**, currently expanding my Computer Science background while building practical software systems.
 
-My current engineering focus is around:
-
-**Backend Engineering · REST APIs · API Integration · Databases · Authentication · Testing · Distributed Components**
-
-I enjoy taking a requirement, breaking it into smaller problems, designing the flow, implementing it, testing the edge cases, and figuring out why something inevitably breaks.
-
----
-
-## ⟡ `ENGINEERING_STACK`
-
-### Languages
-
-<p>
-<img src="https://skillicons.dev/icons?i=java,python,c" />
-</p>
-
-**SQL · Java · Python · C**
-
----
-
-### Backend & Frameworks
-
-<p>
-<img src="https://skillicons.dev/icons?i=spring,hibernate,maven" />
-</p>
-
-**Spring Boot · Spring Security · Spring Data JPA · Hibernate · JDBC**
-
----
-
-### Databases & Data
-
-<p>
-<img src="https://skillicons.dev/icons?i=oracle,redis" />
-</p>
-
-**Oracle Database · Oracle XE · SQL · Redis**
-
----
-
-### API & Development Tools
-
-<p>
-<img src="https://skillicons.dev/icons?i=postman,swagger" />
-</p>
-
-**REST APIs · OpenAPI / Swagger · Postman · API Integration · JWT**
-
----
-
-### Testing
-
-<p>
-<img src="https://skillicons.dev/icons?i=junit" />
-</p>
-
-**JUnit · Mockito · Unit Testing · Integration Testing · Test-driven debugging**
-
----
-
-### DevOps & Environment
-
-<p>
-<img src="https://skillicons.dev/icons?i=docker,linux,git,github" />
-</p>
-
-**Docker · Linux / Unix · Git · GitHub · Maven**
-
----
-
-### Development Environment
-
-**IntelliJ IDEA · Git Bash · Windows · Linux / Unix**
-
----
-
-## ⟡ `ARCHITECTURE_&_ENGINEERING`
-
-The tools are only part of the work.
-
-I'm also working with:
+My current engineering work revolves around:
 
 ```text
-Object-Oriented Programming
-Layered Architecture
-Controller / Service / Repository
-DAO Pattern
-DTOs
-Exception Handling
-Validation
-Authentication & Authorization
-JWT
-Database Transactions
-Caching
-API Integration
-External API Clients
-Data Mapping
-Pagination & Filtering
-HTTP Status Codes
-Unit Testing
-Mocking
+Backend Development
+        │
+        ├── Java / Spring Boot
+        ├── REST APIs
+        ├── API Integration
+        ├── Database Design
+        ├── Authentication & Authorization
+        ├── Testing
+        ├── Caching
+        └── Application Architecture
+```
+
+I enjoy taking a requirement from:
+
+```text
+Problem
+   ↓
+Design
+   ↓
+Implementation
+   ↓
+Testing
+   ↓
 Debugging
-Git Version Control
+   ↓
+Working Software
 ```
 
 ---
 
-# ⟡ `SELECTED_WORK`
+# ⟡ TECHNOLOGY STACK
 
-## 01 · API Integration Assessment
+## Languages
 
-### External API → Backend Service → Oracle
+<p>
+<img src="https://img.shields.io/badge/Java-181818?style=for-the-badge&logo=openjdk&logoColor=white">
+<img src="https://img.shields.io/badge/Python-181818?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/C-181818?style=for-the-badge&logo=c&logoColor=white">
+<img src="https://img.shields.io/badge/SQL-181818?style=for-the-badge&logo=databricks&logoColor=white">
+</p>
 
-A backend integration project involving communication with an external API and synchronization of customer/user data.
+---
+
+## Backend Engineering
+
+<p>
+<img src="https://img.shields.io/badge/Spring_Boot-181818?style=for-the-badge&logo=springboot&logoColor=white">
+<img src="https://img.shields.io/badge/Spring_MVC-181818?style=for-the-badge&logo=spring&logoColor=white">
+<img src="https://img.shields.io/badge/Spring_Security-181818?style=for-the-badge&logo=springsecurity&logoColor=white">
+<img src="https://img.shields.io/badge/Spring_Data_JPA-181818?style=for-the-badge&logo=spring&logoColor=white">
+</p>
+
+<p>
+<img src="https://img.shields.io/badge/JPA-181818?style=for-the-badge&logo=hibernate&logoColor=white">
+<img src="https://img.shields.io/badge/Hibernate-181818?style=for-the-badge&logo=hibernate&logoColor=white">
+<img src="https://img.shields.io/badge/JDBC-181818?style=for-the-badge&logo=java&logoColor=white">
+<img src="https://img.shields.io/badge/REST_API-181818?style=for-the-badge&logo=fastapi&logoColor=white">
+<img src="https://img.shields.io/badge/JWT-181818?style=for-the-badge&logo=jsonwebtokens&logoColor=white">
+</p>
+
+---
+
+## Databases & Data
+
+<p>
+<img src="https://img.shields.io/badge/Oracle_Database-181818?style=for-the-badge&logo=oracle&logoColor=white">
+<img src="https://img.shields.io/badge/Oracle_XE-181818?style=for-the-badge&logo=oracle&logoColor=white">
+<img src="https://img.shields.io/badge/SQL-181818?style=for-the-badge&logo=oracle&logoColor=white">
+<img src="https://img.shields.io/badge/Redis-181818?style=for-the-badge&logo=redis&logoColor=white">
+</p>
+
+---
+
+## API Development & Documentation
+
+<p>
+<img src="https://img.shields.io/badge/Swagger-181818?style=for-the-badge&logo=swagger&logoColor=white">
+<img src="https://img.shields.io/badge/OpenAPI-181818?style=for-the-badge&logo=openapiinitiative&logoColor=white">
+<img src="https://img.shields.io/badge/Postman-181818?style=for-the-badge&logo=postman&logoColor=white">
+</p>
+
+**API work includes:**
 
 ```text
-             EXTERNAL API
-                  │
-                  ▼
-          ┌───────────────┐
-          │  API CLIENT   │
-          └───────┬───────┘
-                  │
-                  ▼
-          ┌───────────────┐
-          │    SERVICE    │
-          └───────┬───────┘
-                  │
-          ┌───────┼────────┐
-          ▼       ▼        ▼
-        FETCH    MAP    VALIDATE
-          │       │        │
-          └───────┼────────┘
-                  ▼
-             ORACLE DB
+REST API Design
+API Integration
+External API Clients
+Request / Response Mapping
+DTOs
+Validation
+HTTP Status Codes
+Error Handling
+Swagger / OpenAPI Documentation
+Postman Testing
+```
+
+---
+
+## Testing
+
+<p>
+<img src="https://img.shields.io/badge/JUnit-181818?style=for-the-badge&logo=junit5&logoColor=white">
+<img src="https://img.shields.io/badge/Mockito-181818?style=for-the-badge&logo=mockito&logoColor=white">
+</p>
+
+```text
+Unit Testing
+Mocking
+Service Testing
+Controller Testing
+Happy Path
+Failure Path
+Edge Cases
+Verification
+```
+
+---
+
+## Build · Version Control · Environment
+
+<p>
+<img src="https://img.shields.io/badge/Maven-181818?style=for-the-badge&logo=apachemaven&logoColor=white">
+<img src="https://img.shields.io/badge/Git-181818?style=for-the-badge&logo=git&logoColor=white">
+<img src="https://img.shields.io/badge/GitHub-181818?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/Docker-181818?style=for-the-badge&logo=docker&logoColor=white">
+</p>
+
+<p>
+<img src="https://img.shields.io/badge/IntelliJ_IDEA-181818?style=for-the-badge&logo=intellijidea&logoColor=white">
+<img src="https://img.shields.io/badge/Linux-181818?style=for-the-badge&logo=linux&logoColor=white">
+<img src="https://img.shields.io/badge/Git_Bash-181818?style=for-the-badge&logo=gitforwindows&logoColor=white">
+</p>
+
+---
+
+# ⟡ ENGINEERING TOOLBOX
+
+```text
+Architecture
+────────────
+• Layered Architecture
+• Controller / Service / Repository
+• DAO Pattern
+• DTO Pattern
+• Separation of Concerns
+• Dependency Injection
+
+Database
+────────
+• Relational Databases
+• SQL
+• Oracle
+• JDBC
+• JPA
+• Hibernate
+• Transactions
+• Entity Relationships
+
+Security
+────────
+• Authentication
+• Authorization
+• Spring Security
+• JWT
+• BCrypt
+
+API
+───
+• REST
+• HTTP
+• CRUD
+• External API Integration
+• Request / Response Mapping
+• Validation
+• Exception Handling
+• Swagger / OpenAPI
+
+Testing
+───────
+• JUnit
+• Mockito
+• Unit Testing
+• Mocking
+• Edge Cases
+• Failure Scenarios
+
+Infrastructure
+──────────────
+• Docker
+• Redis
+• Linux / Unix
+• Git
+• Maven
+```
+
+---
+
+# ⟡ SELECTED PROJECTS
+
+## 01 — API Integration Assessment
+
+**External API → Service Layer → Oracle**
+
+A backend integration project focused on communicating with an external API, retrieving data, transforming it and synchronizing it with the application's database.
+
+```text
+                 EXTERNAL API
+                      │
+                      ▼
+              ┌──────────────┐
+              │  API CLIENT  │
+              └───────┬──────┘
+                      │
+                      ▼
+              ┌──────────────┐
+              │    SERVICE   │
+              └───────┬──────┘
+                      │
+             ┌────────┼────────┐
+             ▼        ▼        ▼
+           FETCH      MAP    VALIDATE
+             │        │        │
+             └────────┼────────┘
+                      ▼
+                 ORACLE DB
 ```
 
 **Stack**
 
-`Java` `Spring Boot` `REST` `Oracle` `JPA` `MapStruct` `Swagger` `JUnit` `Mockito`
+`Java` `Spring Boot` `REST` `JPA` `Oracle` `Swagger` `Postman` `JUnit` `Mockito` `Maven`
 
 ---
 
-## 02 · Leaf Book Store
+# 02 — Leaf Book Store
 
-A Spring Boot backend for an e-commerce/bookstore system.
+A Spring Boot e-commerce backend exploring real-world backend concepts.
 
 ```text
-Client
-  │
-  ▼
-REST Controller
-  │
-  ▼
-Service Layer
-  │
-  ▼
-Repository
-  │
-  ▼
-Oracle Database
+                 CLIENT
+                    │
+                    ▼
+              REST CONTROLLER
+                    │
+                    ▼
+               SERVICE LAYER
+                    │
+                    ▼
+                JPA / ORM
+                    │
+                    ▼
+              ORACLE DATABASE
 ```
 
-Implemented concepts include:
+### Concepts
 
 * Customer hierarchy
 * Cart / Order lifecycle
-* Order items
+* OrderItem
 * Price snapshots
 * REST APIs
 * JPA / Hibernate
-* Authentication
+* Oracle
 * BCrypt
-* JWT concepts
-* Oracle persistence
-* API testing with Postman
+* JWT authentication concepts
+* Exception handling
+* Postman testing
 
 ---
 
-## 03 · Task Management API
+# 03 — Task Management API
 
-A backend API focused on authenticated task management.
+A secured backend API for task management.
 
 ```text
-Authentication
-      │
-      ▼
+CLIENT
+  │
+  ▼
+LOGIN
+  │
+  ▼
 JWT
-      │
-      ▼
-Security Filter
-      │
-      ▼
-Controller
-      │
-      ▼
-Service
-      │
-      ▼
-Repository
-      │
-      ▼
+  │
+  ▼
+SECURITY FILTER
+  │
+  ▼
+CONTROLLER
+  │
+  ▼
+SERVICE
+  │
+  ▼
+REPOSITORY
+  │
+  ▼
+ORACLE
+```
+
+### Focus
+
+`Authentication`
+
+`Authorization`
+
+`JWT`
+
+`CRUD`
+
+`Validation`
+
+`Exception Handling`
+
+`Filtering`
+
+`Oracle`
+
+`Spring Boot`
+
+---
+
+# 04 — MegaSoft Task Management
+
+Java desktop application built around:
+
+```text
+Java Swing
+    │
+    ▼
+DAO
+    │
+    ▼
+Service Layer
+    │
+    ▼
+JDBC
+    │
+    ▼
 Oracle
 ```
 
-Focus areas:
+### Concepts
 
-**Authentication · Authorization · CRUD · Validation · Exception Handling · Filtering · JWT · Oracle**
-
----
-
-## 04 · MegaSoft Task Management
-
-A Java desktop application built with:
-
-**Java Swing · JDBC · DAO · Service Layer · Oracle**
-
-The project strengthened my understanding of:
-
-* OOP
-* Layered architecture
-* DAO pattern
-* JDBC
-* Database interaction
-* Separation of concerns
+`OOP · DAO · JDBC · Layered Architecture · Oracle · Swing`
 
 ---
 
-## 05 · MT / LLM Research
+# 05 — MT / LLM Research
 
-A Python-based implementation exploring:
+Python-based experimentation involving:
 
-**Machine Translation · Terminology · LLM-assisted processing · NLP**
-
-A reminder that apparently backend development wasn't enough trouble.
+```text
+Machine Translation
+       +
+Terminology
+       +
+LLM-assisted processing
+       +
+NLP
+```
 
 ---
 
-# ⟡ `CURRENTLY_EXPLORING`
+# ⟡ CURRENTLY EXPLORING
 
 ```text
 Spring Boot
@@ -297,49 +422,20 @@ System Design
 Data Structures & Algorithms
 ```
 
-My current direction:
-
-```text
-Software Engineering
-        │
-        ▼
-Backend Engineering
-        │
-        ├── Java
-        ├── Spring Boot
-        ├── REST APIs
-        ├── Databases
-        ├── Security
-        ├── Testing
-        └── Distributed Components
-```
-
 ---
 
-# ⟡ `THE_ENGINEERING_RULES`
-
-> **Understand first. Code second.**
-
-> **A controller should not contain your entire application.**
-
-> **A successful HTTP request doesn't automatically mean a successful design.**
-
-> **Test the failure path, not only the happy path.**
-
-> **If you can't explain the data flow, you probably don't understand the implementation yet.**
-
----
-
-# ⟡ `DEBUG_MODE`
+# ⟡ THE DEBUGGING PROTOCOL
 
 ```java
-public void debug() {
+public void solveProblem() {
 
     reproduce();
 
     investigate();
 
-    identifyRootCause();
+    isolateRootCause();
+
+    understand();
 
     implementFix();
 
@@ -347,20 +443,21 @@ public void debug() {
 
     verify();
 
-    if (bugStillExists()) {
-        repeat();
-    }
+    document();
 }
 ```
 
+> Build it. Break it. Understand why. Fix it properly.
+
 ---
 
-# ⟡ `GITHUB_ACTIVITY`
+# ⟡ GITHUB ACTIVITY
 
 <p align="center">
 
 <img
 src="https://github-readme-stats.vercel.app/api?username=FatmaElMahdi1000&show_icons=true&hide_border=true&bg_color=0d0d0d&title_color=ffffff&text_color=b8b8b8&icon_color=ffffff&rank_icon=github"
+alt="GitHub statistics"
 />
 
 </p>
@@ -369,22 +466,25 @@ src="https://github-readme-stats.vercel.app/api?username=FatmaElMahdi1000&show_i
 
 <img
 src="https://github-readme-stats.vercel.app/api/top-langs/?username=FatmaElMahdi1000&layout=compact&hide_border=true&bg_color=0d0d0d&title_color=ffffff&text_color=b8b8b8"
+alt="Most used languages"
 />
 
 </p>
 
 ---
 
-# ⟡ `CONNECT`
+# ⟡ CONNECT
 
 <p align="center">
 
 <a href="https://github.com/FatmaElMahdi1000">
-<img src="https://img.shields.io/badge/GitHub-111111?style=flat-square&logo=github&logoColor=white"/>
+GitHub
 </a>
 
+  ·  
+
 <a href="https://www.linkedin.com/in/fatma-el-mahdi-837a80177/">
-<img src="https://img.shields.io/badge/LinkedIn-111111?style=flat-square&logo=linkedin&logoColor=white"/>
+LinkedIn
 </a>
 
 </p>
@@ -393,7 +493,6 @@ src="https://github-readme-stats.vercel.app/api/top-langs/?username=FatmaElMahdi
 
 <p align="center">
 <sub>
-Nevermore was built for unusual minds. Software is no different.
+Nevermore-inspired. Software-engineered.
 </sub>
 </p>
-
