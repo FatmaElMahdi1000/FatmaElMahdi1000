@@ -10,6 +10,12 @@
       <stop offset="100%" style="stop-color:#c9a86b;stop-opacity:0.7" />
     </linearGradient>
     
+    <linearGradient id="characterGown" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </linearGradient>
+    
     <filter id="glow">
       <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
       <feMerge>
@@ -22,22 +28,106 @@
   <!-- Dark academia background -->
   <rect width="1200" height="400" fill="url(#darkBg)"/>
   
+  <!-- Animated floating stars -->
+  <g id="stars">
+    <circle cx="150" cy="80" r="2" fill="#c9a86b" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1050" cy="120" r="1.5" fill="#e8d5c4" opacity="0.5">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="300" cy="50" r="1" fill="#b8a8b8" opacity="0.4">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1100" cy="340" r="1.2" fill="#c9a86b" opacity="0.5">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="200" cy="320" r="1.5" fill="#e8d5c4" opacity="0.4">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Animated raven (right side, flying) -->
+  <g id="raven">
+    <g transform="translate(1080, 60)">
+      <!-- Raven body -->
+      <ellipse cx="0" cy="0" rx="18" ry="22" fill="#1a1a1a" opacity="0.8"/>
+      <!-- Raven head -->
+      <circle cx="0" cy="-20" r="14" fill="#0a0a0a"/>
+      <!-- Raven eye -->
+      <circle cx="6" cy="-22" r="3" fill="#c9a86b"/>
+      <circle cx="7" cy="-22" r="1.5" fill="#0a0a0a"/>
+      <!-- Raven beak -->
+      <path d="M 12 -20 L 20 -18 L 12 -16 Z" fill="#4a4a4a"/>
+      <!-- Raven wings (animated flapping) -->
+      <path d="M -8 -8 Q -25 -15 -30 -5 Q -25 0 -8 0" fill="#0a0a0a" opacity="0.7">
+        <animate attributeName="d" 
+          values="M -8 -8 Q -25 -15 -30 -5 Q -25 0 -8 0;
+                  M -8 -8 Q -28 -20 -32 -8 Q -26 2 -8 0;
+                  M -8 -8 Q -25 -15 -30 -5 Q -25 0 -8 0"
+          dur="2s" repeatCount="indefinite" />
+      </path>
+      <!-- Raven tail feathers -->
+      <path d="M 8 15 Q 15 25 12 35" stroke="#0a0a0a" stroke-width="3" fill="none" opacity="0.8"/>
+      <path d="M 0 18 Q 8 28 5 38" stroke="#0a0a0a" stroke-width="3" fill="none" opacity="0.8"/>
+      <path d="M -8 15 Q 0 25 -2 35" stroke="#0a0a0a" stroke-width="3" fill="none" opacity="0.8"/>
+      
+      <!-- Raven flying animation -->
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="1080,60; 1120,40; 1100,80; 1080,60"
+        dur="4s"
+        repeatCount="indefinite"
+      />
+    </g>
+  </g>
+  
   <!-- Subtle spiderweb elements -->
   <path d="M 100 50 Q 150 80 120 130" stroke="#4a3a52" stroke-width="0.8" fill="none" opacity="0.3"/>
   <path d="M 120 130 L 160 180" stroke="#4a3a52" stroke-width="0.8" fill="none" opacity="0.3"/>
   <path d="M 160 180 Q 140 200 100 180" stroke="#4a3a52" stroke-width="0.8" fill="none" opacity="0.3"/>
   
-  <!-- Right side spiderweb -->
-  <path d="M 1100 60 Q 1050 90 1070 140" stroke="#4a3a52" stroke-width="0.8" fill="none" opacity="0.3"/>
-  <path d="M 1070 140 L 1020 190" stroke="#4a3a52" stroke-width="0.8" fill="none" opacity="0.3"/>
-  <path d="M 1020 190 Q 1050 210 1100 190" stroke="#4a3a52" stroke-width="0.8" fill="none" opacity="0.3"/>
+  <!-- Left side spiderweb -->
+  <path d="M 100 60 Q 140 90 110 140" stroke="#4a3a52" stroke-width="0.8" fill="none" opacity="0.3"/>
+  <path d="M 110 140 L 150 190" stroke="#4a3a52" stroke-width="0.8" fill="none" opacity="0.3"/>
+  <path d="M 150 190 Q 130 210 90 190" stroke="#4a3a52" stroke-width="0.8" fill="none" opacity="0.3"/>
   
-  <!-- Gothic moon in background -->
-  <circle cx="1050" cy="80" r="50" fill="url(#moonGlow)" opacity="0.4"/>
-  <circle cx="1050" cy="80" r="50" fill="none" stroke="#8b6f47" stroke-width="1" opacity="0.5"/>
+  <!-- Rotating decorative symbols -->
+  <g id="symbol1">
+    <text x="140" y="40" font-size="24" fill="#7a5a7f" opacity="0.6" font-family="serif">◈</text>
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0 140 40; 360 140 40"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+  </g>
   
-  <!-- Crescent detail -->
-  <circle cx="1065" cy="70" r="48" fill="#0a0a0a" opacity="0.8"/>
+  <g id="symbol2">
+    <text x="1050" y="360" font-size="20" fill="#7a5a7f" opacity="0.6" font-family="serif">◇</text>
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      values="0 1050 360; -360 1050 360"
+      dur="10s"
+      repeatCount="indefinite"
+    />
+  </g>
+  
+  <!-- Animated pulsing moon -->
+  <g id="moon">
+    <circle cx="1050" cy="80" r="50" fill="url(#moonGlow)" opacity="0.4"/>
+    <circle cx="1050" cy="80" r="50" fill="none" stroke="#8b6f47" stroke-width="1" opacity="0.5"/>
+    <!-- Crescent detail -->
+    <circle cx="1065" cy="70" r="48" fill="#0a0a0a" opacity="0.8"/>
+    <!-- Pulsing glow -->
+    <circle cx="1050" cy="80" r="50" fill="none" stroke="#c9a86b" stroke-width="2" opacity="0">
+      <animate attributeName="opacity" values="0;0.4;0" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="r" values="50;65;50" dur="3s" repeatCount="indefinite" />
+    </circle>
+  </g>
   
   <!-- Minor moon glow -->
   <circle cx="150" cy="320" r="35" fill="#4a3f5c" opacity="0.15"/>
@@ -46,9 +136,84 @@
   <line x1="50" y1="100" x2="50" y2="350" stroke="#3a2a42" stroke-width="2" opacity="0.4"/>
   <line x1="1150" y1="100" x2="1150" y2="350" stroke="#3a2a42" stroke-width="2" opacity="0.4"/>
   
-  <!-- Decorative elements (◈ ◇ ✦) -->
-  <text x="140" y="40" font-size="24" fill="#7a5a7f" opacity="0.6" font-family="serif">◈</text>
-  <text x="1050" y="360" font-size="20" fill="#7a5a7f" opacity="0.6" font-family="serif">◇</text>
+  <!-- Wednesday Character (left side, animated) -->
+  <g id="wednesday-character">
+    <g transform="translate(120, 180)">
+      <!-- Character gown -->
+      <path d="M -15 -30 L -25 10 L -20 50 L 20 50 L 25 10 L 15 -30 Z" fill="url(#characterGown)" opacity="0.9"/>
+      
+      <!-- Character arms (animated reaching gesture) -->
+      <line x1="-15" y1="-10" x2="-40" y2="10" stroke="#2a2a3e" stroke-width="6" stroke-linecap="round">
+        <animate attributeName="x2" values="-40;-45;-40" dur="3s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="10;5;10" dur="3s" repeatCount="indefinite" />
+      </line>
+      <line x1="15" y1="-10" x2="40" y2="10" stroke="#2a2a3e" stroke-width="6" stroke-linecap="round">
+        <animate attributeName="x2" values="40;45;40" dur="3s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="10;5;10" dur="3s" repeatCount="indefinite" />
+      </line>
+      
+      <!-- Character neck -->
+      <rect x="-8" y="-35" width="16" height="8" fill="#d4c5b9" opacity="0.85"/>
+      
+      <!-- Character head -->
+      <circle cx="0" cy="-45" r="16" fill="#d4c5b9" opacity="0.85"/>
+      
+      <!-- Character hair (long, dark) -->
+      <path d="M -16 -45 Q -22 -30 -20 -10" stroke="#1a1a2e" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.9"/>
+      <path d="M 16 -45 Q 22 -30 20 -10" stroke="#1a1a2e" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.9"/>
+      <!-- Center hair fall -->
+      <path d="M -2 -60 Q 0 -50 -1 -20" stroke="#1a1a2e" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.95"/>
+      <path d="M 2 -60 Q 0 -50 1 -20" stroke="#1a1a2e" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.95"/>
+      
+      <!-- Character eyes (dead, expressionless stare) -->
+      <circle cx="-6" cy="-48" r="2.5" fill="#1a1a2e"/>
+      <circle cx="6" cy="-48" r="2.5" fill="#1a1a2e"/>
+      <!-- Slight eye highlight -->
+      <circle cx="-5" cy="-49" r="0.8" fill="#4a4a6e" opacity="0.6"/>
+      <circle cx="7" cy="-49" r="0.8" fill="#4a4a6e" opacity="0.6"/>
+      
+      <!-- Character mouth (thin, expressionless line) -->
+      <line x1="-4" y1="-40" x2="4" y2="-40" stroke="#8a6a7e" stroke-width="1.5" opacity="0.8"/>
+      
+      <!-- Character is "thinking" - animated thought bubble -->
+      <g id="thought" opacity="0.6">
+        <!-- Main thought bubble -->
+        <ellipse cx="-35" cy="-60" rx="20" ry="15" fill="none" stroke="#7a5a7f" stroke-width="1.5" opacity="0.7"/>
+        <!-- Bubble pointer -->
+        <circle cx="-25" cy="-45" r="2.5" fill="none" stroke="#7a5a7f" stroke-width="1.5" opacity="0.7"/>
+        <!-- Additional small bubbles -->
+        <circle cx="-50" cy="-70" r="3" fill="none" stroke="#7a5a7f" stroke-width="1" opacity="0.5"/>
+        
+        <!-- Animated thought pulse -->
+        <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2.5s" repeatCount="indefinite" />
+      </g>
+      
+      <!-- Slight swaying animation (character posture) -->
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="120,180; 125,182; 120,180; 115,182; 120,180"
+        dur="4s"
+        repeatCount="indefinite"
+      />
+    </g>
+  </g>
+  
+  <!-- Floating atmospheric particles -->
+  <g id="particles" opacity="0.4">
+    <circle cx="200" cy="100" r="1" fill="#7a5a7f">
+      <animate attributeName="cy" values="100;200;100" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.4;0" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="950" cy="150" r="1.2" fill="#c9a86b">
+      <animate attributeName="cy" values="150;280;150" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.3;0" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="500" cy="200" r="0.8" fill="#b8a8b8">
+      <animate attributeName="cy" values="200;300;200" dur="7s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.35;0" dur="7s" repeatCount="indefinite" />
+    </circle>
+  </g>
   
   <!-- Main title: FATMA EL MAHDI -->
   <text x="600" y="140" font-size="48" font-weight="bold" fill="#e8d5c4" text-anchor="middle" font-family="Georgia, serif" letter-spacing="3">
@@ -77,4 +242,11 @@
   
   <!-- Bottom decorative line -->
   <line x1="200" y1="380" x2="1000" y2="380" stroke="#7a5a7f" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Additional atmospheric symbols that pulse -->
+  <g id="pulse-symbols" opacity="0.4">
+    <text x="80" y="280" font-size="18" fill="#7a5a7f" opacity="0.4" font-family="serif">✦</text>
+    <text x="1120" y="250" font-size="18" fill="#7a5a7f" opacity="0.4" font-family="serif">☾</text>
+    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3.5s" repeatCount="indefinite" />
+  </g>
 </svg>
