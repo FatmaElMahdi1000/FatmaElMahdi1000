@@ -1,4 +1,4 @@
-<div align="center">
+<!-- <div align="center">
 
 # ☾ 𝕱𝖆𝖙𝖒𝖆 𝕰𝖑 𝕸𝖆𝖍𝖉𝖎 ☽
 
@@ -602,4 +602,4 @@ This downloads a curated Wednesday-style background from Unsplash into `assets/i
 
 ## Credits
 
-See `assets/images/unsplash-credits.txt` for the source info and Unsplash license notes.
+See `assets/images/unsplash-credits.txt` for the source info and Unsplash license notes. -->
