@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatma El Mahdi - Software Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+            color: #e8d5c4;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Hide Wednesday on mobile */
+        @media (max-width: 767px) {
+            svg[viewBox="0 0 120 160"] {
+                display: none !important;
+            }
+        }
+
+        header {
+            background: rgba(20, 20, 20, 0.95);
+            border-bottom: 2px solid #c9a86b;
+            padding: 2rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #c9a86b;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .subtitle {
+            color: #a89070;
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background: rgba(30, 30, 40, 0.8);
+            border: 1px solid #c9a86b;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(5px);
+        }
+
+        section h2 {
+            color: #c9a86b;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #c9a86b;
+            padding-bottom: 0.5rem;
+        }
+
+        .stack-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .tag {
+            background: rgba(201, 168, 107, 0.15);
+            border: 1px solid #c9a86b;
+            color: #c9a86b;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            cursor: default;
+            transition: all 0.3s ease;
+        }
+
+        .tag:hover {
+            background: rgba(201, 168, 107, 0.25);
+            transform: translateY(-2px);
+        }
+
+        .project {
+            background: rgba(20, 20, 30, 0.6);
+            border-left: 4px solid #c9a86b;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .project:hover {
+            background: rgba(20, 20, 30, 0.9);
+            box-shadow: 0 4px 12px rgba(201, 168, 107, 0.2);
+        }
+
+        .project h3 {
+            color: #c9a86b;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .project a {
+            color: #c9a86b;
+            text-decoration: none;
+            border-bottom: 1px solid #c9a86b;
+            transition: all 0.3s ease;
+        }
+
+        .project a:hover {
+            color: #e8d5c4;
+            border-bottom-color: #e8d5c4;
+        }
+
+        .project-tech {
+            color: #a89070;
+            font-size: 0.95rem;
+            margin: 0.5rem 0;
+        }
+
+        .project-desc {
+            color: #e8d5c4;
+            margin: 0.8rem 0;
+        }
+
+        .highlights {
+            list-style: none;
+            padding-left: 1rem;
+            color: #d4c5b0;
+            font-size: 0.95rem;
+        }
+
+        .highlights li:before {
+            content: "→ ";
+            color: #c9a86b;
+            margin-right: 0.5rem;
+        }
+
+        .highlights li {
+            margin: 0.3rem 0;
+        }
+
+        .diagram {
+            background: rgba(20, 20, 20, 0.5);
+            border: 1px solid #a89070;
+            border-radius: 4px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            color: #a89070;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        .principles {
+            background: rgba(20, 20, 20, 0.4);
+            border-left: 4px solid #c9a86b;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .principles li {
+            margin: 0.5rem 0;
+            margin-left: 1.5rem;
+        }
+
+        footer {
+            background: rgba(20, 20, 20, 0.95);
+            border-top: 2px solid #c9a86b;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+            color: #a89070;
+        }
+
+        footer a {
+            color: #c9a86b;
+            text-decoration: none;
+            border-bottom: 1px solid #c9a86b;
+            transition: all 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #e8d5c4;
+        }
+
+        .quote {
+            text-align: center;
+            font-style: italic;
+            color: #a89070;
+            margin: 1.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #c9a86b;
+            margin: 2rem 0;
+            opacity: 0.3;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            main {
+                padding: 0 1rem;
+            }
+
+            .stack-tags {
+                gap: 0.3rem;
+            }
+
+            .tag {
+                font-size: 0.85rem;
+                padding: 0.3rem 0.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>💻 Fatma El Mahdi</h1>
+        <p class="subtitle">Software Engineer | Backend Development | Spring Boot</p>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section>
+            <h2>◆ About Me</h2>
+            <p>Software Engineer focused on <strong>Java and Spring Boot</strong> backend development. I build REST APIs, database-backed applications, external API integrations, and data synchronization workflows.</p>
+            <p style="margin-top: 1rem;">Currently strengthening my backend engineering fundamentals through practical projects and postgraduate Computer Science study.</p>
+            <p style="margin-top: 1rem;">I use AI tools as a development aid—for debugging, exploring implementation approaches, understanding unfamiliar APIs, and technical research—while maintaining disciplined engineering practices.</p>
+        </section>
+
+        <!-- Core Stack -->
+        <section>
+            <h2>◈ Core Stack</h2>
+            
+            <h3 style="color: #c9a86b; margin-top: 1.5rem; margin-bottom: 0.8rem;">Languages</h3>
+            <div class="stack-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Python</span>
+                <span class="tag">SQL</span>
+                <span class="tag">C</span>
+            </div>
+
+            <h3 style="color: #c9a86b; margin-top: 1.5rem; margin-bottom: 0.8rem;">Backend & Frameworks</h3>
+            <div class="stack-tags">
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Spring Web</span>
+                <span class="tag">Spring Security</span>
+                <span class="tag">Spring Data JPA</span>
+                <span class="tag">Hibernate</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">JWT</span>
+                <span class="tag">BCrypt</span>
+            </div>
+
+            <h3 style="color: #c9a86b; margin-top: 1.5rem; margin-bottom: 0.8rem;">Persistence & Database</h3>
+            <div class="stack-tags">
+                <span class="tag">JPA</span>
+                <span class="tag">JDBC</span>
+                <span class="tag">Oracle SQL</span>
+                <span class="tag">Oracle Database</span>
+            </div>
+
+            <h3 style="color: #c9a86b; margin-top: 1.5rem; margin-bottom: 0.8rem;">API Development</h3>
+            <div class="stack-tags">
+                <span class="tag">Swagger/OpenAPI</span>
+                <span class="tag">Postman</span>
+                <span class="tag">MapStruct</span>
+                <span class="tag">DTOs</span>
+                <span class="tag">RestClient</span>
+            </div>
+
+            <h3 style="color: #c9a86b; margin-top: 1.5rem; margin-bottom: 0.8rem;">Infrastructure & Tools</h3>
+            <div class="stack-tags">
+                <span class="tag">Docker</span>
+                <span class="tag">Docker Compose</span>
+                <span class="tag">Redis</span>
+                <span class="tag">Git</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">IntelliJ IDEA</span>
+                <span class="tag">Linux</span>
+            </div>
+
+            <h3 style="color: #c9a86b; margin-top: 1.5rem; margin-bottom: 0.8rem;">Build & Quality</h3>
+            <div class="stack-tags">
+                <span class="tag">Maven</span>
+                <span class="tag">JUnit</span>
+                <span class="tag">Mockito</span>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section>
+            <h2>◇ Featured Backend Projects</h2>
+
+            <div class="project">
+                <h3>🔌 API Integration & Data Synchronization Assessment</h3>
+                <p class="project-tech">Java · Spring Boot · REST API · Oracle · External API Integration</p>
+                <p class="project-desc"><a href="https://github.com/FatmaElMahdi1000/API-integration-data-synchronization-Assessment-" target="_blank">View on GitHub</a></p>
+                <p>A Spring Boot backend that integrates with an external Assessment API, synchronizes customer data into an internal Oracle database, and exposes the synchronized data through REST endpoints.</p>
+                <ul class="highlights">
+                    <li>RestClient integration with external REST API</li>
+                    <li>Data synchronization & reconciliation logic</li>
+                    <li>JPA/Hibernate entity mapping with MapStruct</li>
+                    <li>Pagination handling</li>
+                    <li>Oracle JDBC integration</li>
+                    <li>Swagger/OpenAPI documentation</li>
+                    <li>Docker containerization</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>🎯 BuildersTribe Task Management API</h3>
+                <p class="project-tech">Java · Spring Boot · Spring Security · JWT · Oracle</p>
+                <p class="project-desc"><a href="https://github.com/FatmaElMahdi1000/BuildersTribe-ENGINEERING-CASE-STUDY" target="_blank">View on GitHub</a></p>
+                <p>A backend task management system emphasizing authentication and user-scoped data access. Demonstrates proper Spring Security configuration, JWT token handling, and secure filtering without exposing other users' data.</p>
+                <ul class="highlights">
+                    <li>Spring Security authentication & authorization</li>
+                    <li>JWT token generation and validation</li>
+                    <li>User-scoped task filtering</li>
+                    <li>Spring Data JPA repositories</li>
+                    <li>REST API endpoints</li>
+                    <li>Swagger documentation</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>📚 Bookstore Management System</h3>
+                <p class="project-tech">Java · Spring Boot · JPA · Oracle · REST APIs</p>
+                <p class="project-desc"><a href="https://github.com/FatmaElMahdi1000/Bookstore-Application-Full-Stack-Learning-Project" target="_blank">View on GitHub</a></p>
+                <p>A backend bookstore system covering customer management, inventory, order processing, and cart operations. Emphasizes backend architecture and business logic.</p>
+                <ul class="highlights">
+                    <li>Spring Boot REST API layer</li>
+                    <li>Spring Data JPA with entity relationships (one-to-many, many-to-many)</li>
+                    <li>Oracle database schema design</li>
+                    <li>Transaction management</li>
+                    <li>Maven build configuration</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>✓ Multi-User Task Management System</h3>
+                <p class="project-tech">Java · Swing · Oracle · JDBC · Layered Architecture</p>
+                <p class="project-desc"><a href="https://github.com/FatmaElMahdi1000/Multi-User_Task_Management_System_DeskTop_App" target="_blank">View on GitHub</a></p>
+                <p>A desktop application prioritizing software architecture and OOP design over UI sophistication. Demonstrates layered architecture, DAO pattern, and proper database integration.</p>
+                <ul class="highlights">
+                    <li>Layered architecture (Presentation → Service → Data Access)</li>
+                    <li>DAO pattern for database abstraction</li>
+                    <li>User authentication & task isolation</li>
+                    <li>Prepared statements for SQL injection prevention</li>
+                    <li>Oracle JDBC integration</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>🤖 Domain-Aware Machine Translation with LLM Post-Editing</h3>
+                <p class="project-tech">Python · MarianMT · Hugging Face · PyTorch · Google GenAI</p>
+                <p class="project-desc"><a href="https://github.com/FatmaElMahdi1000/Domain-MT-LLM-postediting-Paper-Research-Implementation-" target="_blank">View on GitHub</a></p>
+                <p>Research implementation combining neural machine translation, terminology management, and LLM-assisted post-editing. Based on academic research in terminology-aware MT pipelines.</p>
+                <ul class="highlights">
+                    <li>MarianMT transformer models</li>
+                    <li>Terminology memory (TM) integration</li>
+                    <li>Google Generative AI for post-editing</li>
+                    <li>TBX export format</li>
+                    <li>Pandas data processing</li>
+                    <li>PyTorch model inference</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Backend Engineering Focus -->
+        <section>
+            <h2>🏗️ Backend Engineering Focus</h2>
+            <div class="diagram">
+Client Request<br>
+&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+REST Controller (HTTP Layer)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+DTO Validation & Mapping<br>
+&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+Service Layer (Business Logic)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+Repository Pattern (Data Access)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+JPA/Hibernate (ORM)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+Oracle Database
+            </div>
+
+            <h3 style="color: #c9a86b; margin-top: 1.5rem; margin-bottom: 0.8rem;">Core Principles</h3>
+            <ul class="principles">
+                <li><strong>Separation of concerns:</strong> Controller → Service → Repository</li>
+                <li><strong>DTOs for API boundaries:</strong> Prevent entity exposure</li>
+                <li><strong>MapStruct for object mapping:</strong> Type-safe, maintainable transformations</li>
+                <li><strong>Transaction boundaries at service layer:</strong> Clear transaction scope</li>
+                <li><strong>Repository abstraction:</strong> Database independence & testability</li>
+                <li><strong>Proper exception handling:</strong> Meaningful error messages & logging</li>
+            </ul>
+        </section>
+
+        <!-- Testing -->
+        <section>
+            <h2>🧪 Testing</h2>
+            <ul class="highlights">
+                <li><strong>Unit Testing:</strong> JUnit with Mockito for service & repository layer testing</li>
+                <li><strong>Isolation:</strong> Mocking external dependencies and database calls</li>
+                <li><strong>API Testing:</strong> Postman for endpoint validation</li>
+                <li><strong>Edge Cases:</strong> Null handling, boundary conditions, concurrent access scenarios</li>
+            </ul>
+        </section>
+
+        <!-- Learning -->
+        <section>
+            <h2>📚 Currently Learning</h2>
+            <ul class="highlights">
+                <li>Advanced Java fundamentals</li>
+                <li>Spring Boot best practices and patterns</li>
+                <li>REST API design principles</li>
+                <li>Spring Security configuration</li>
+                <li>JPA/Hibernate advanced patterns</li>
+                <li>Oracle SQL optimization</li>
+                <li>Unit testing strategies with JUnit and Mockito</li>
+                <li>Clean code and backend architecture</li>
+            </ul>
+        </section>
+
+        <!-- AI-Assisted Development -->
+        <section>
+            <h2>🧠 AI-Assisted Development</h2>
+            <p>I use AI tools as a development aid for:</p>
+            <ul class="highlights">
+                <li>Debugging runtime issues and stack traces</li>
+                <li>Exploring implementation approaches</li>
+                <li>Understanding unfamiliar APIs and frameworks</li>
+                <li>Generating test ideas and test cases</li>
+                <li>Refactoring discussions and code review</li>
+                <li>Technical research and documentation</li>
+            </ul>
+            <p style="margin-top: 1rem; font-style: italic; color: #a89070;">AI is a tool to enhance productivity, not a replacement for engineering discipline and problem-solving.</p>
+        </section>
+
+        <div class="quote">
+            "The only true wisdom is in knowing you know nothing." — Socrates
+        </div>
+
+    </main>
+
+    <footer>
+        <div style="margin-bottom: 1.5rem;">
+            <p><strong>Connect</strong></p>
+            <p>
+                <a href="https://github.com/FatmaElMahdi1000" target="_blank">GitHub</a> · 
+                <a href="https://www.linkedin.com/in/fatma-el-mahdi-837a80177/" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+        <p style="color: #666; font-size: 0.9rem;">A Software Engineer pursuing backend mastery.</p>
+    </footer>
+
+    <!-- Load Wednesday mascot -->
+    <script src="wednesday-mascot.js"></script>
+</body>
+</html>
