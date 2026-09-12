@@ -1,0 +1,184 @@
+<svg width="1600" height="500" viewBox="0 0 1600 500" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050505"></stop>
+      <stop offset="55%" stop-color="#101010"></stop>
+      <stop offset="100%" stop-color="#1b1b1b"></stop>
+    </linearGradient>
+
+    <radialGradient id="moon">
+      <stop offset="0%" stop-color="#ffffff"></stop>
+      <stop offset="70%" stop-color="#dddddd"></stop>
+      <stop offset="100%" stop-color="#999999"></stop>
+    </radialGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <!-- subtle cloud animation -->
+    <animateTransform id="cloudMove" attributeName="transform" type="translate" from="-80 0" to="80 0" dur="18s" repeatCount="indefinite"></animateTransform>
+
+  </defs>
+
+  <!-- NIGHT SKY -->
+
+  <rect width="1600" height="500" fill="url(#sky)"></rect>
+
+  <!-- STARS -->
+
+  <g fill="#eeeeee" opacity="0.65">
+
+    <circle cx="140" cy="80" r="2"></circle>
+    <circle cx="280" cy="135" r="1.5"></circle>
+    <circle cx="430" cy="70" r="2"></circle>
+    <circle cx="580" cy="120" r="1"></circle>
+    <circle cx="730" cy="65" r="2"></circle>
+    <circle cx="890" cy="115" r="1.5"></circle>
+    <circle cx="1040" cy="60" r="2"></circle>
+    <circle cx="1180" cy="130" r="1"></circle>
+    <circle cx="1320" cy="75" r="2"></circle>
+    <circle cx="1460" cy="120" r="1.5"></circle>
+
+  </g>
+
+  <!-- MOON -->
+
+  <circle cx="1280" cy="120" r="72" fill="url(#moon)" opacity="0.95"></circle>
+
+  <circle cx="1255" cy="100" r="72" fill="#080808"></circle>
+
+  <!-- CLOUDS -->
+
+  <g opacity="0.12" fill="#ffffff">
+
+    <path d="M0 170 Q180 110 360 170 T720 170 T1080 170 T1440 170 T1800 170 V240 H0Z">
+      <animateTransform attributeName="transform" type="translate" from="-180 0" to="120 0" dur="24s" repeatCount="indefinite"></animateTransform>
+    </path>
+
+    <path d="M-200 250 Q0 180 200 250 T600 250 T1000 250 T1400 250 T1800 250 V310 H-200Z">
+      <animateTransform attributeName="transform" type="translate" from="100 0" to="-100 0" dur="30s" repeatCount="indefinite"></animateTransform>
+    </path>
+
+  </g>
+
+  <!-- NEVERMORE-STYLE ACADEMY SILHOUETTE -->
+
+  <g fill="#030303">
+
+    <!-- main building -->
+
+    <rect x="0" y="350" width="1600" height="150"></rect>
+
+    <!-- central tower -->
+
+    <rect x="690" y="190" width="220" height="310"></rect>
+
+    <!-- tower roof -->
+
+    <polygon points="650,190 800,70 950,190"></polygon>
+
+    <!-- side towers -->
+
+    <rect x="350" y="275" width="150" height="225"></rect>
+    <polygon points="330,275 425,185 520,275"></polygon>
+
+    <rect x="1100" y="275" width="150" height="225"></rect>
+    <polygon points="1080,275 1175,185 1270,275"></polygon>
+
+    <!-- spires -->
+
+    <polygon points="410,185 425,120 440,185"></polygon>
+    <polygon points="1160,185 1175,120 1190,185"></polygon>
+    <polygon points="785,70 800,10 815,70"></polygon>
+
+  </g>
+
+  <!-- WINDOWS -->
+
+  <g fill="#bcbcbc" opacity="0.55">
+
+    <rect x="735" y="235" width="22" height="45"></rect>
+    <rect x="775" y="235" width="22" height="45"></rect>
+    <rect x="815" y="235" width="22" height="45"></rect>
+    <rect x="855" y="235" width="22" height="45"></rect>
+
+    <rect x="390" y="315" width="20" height="38"></rect>
+    <rect x="440" y="315" width="20" height="38"></rect>
+
+    <rect x="1140" y="315" width="20" height="38"></rect>
+    <rect x="1190" y="315" width="20" height="38"></rect>
+
+  </g>
+
+  <!-- RAVEN -->
+
+  <g fill="#000000">
+
+    <path d="
+      M1090 155
+      C1110 135 1130 135 1145 150
+      C1165 130 1190 135 1200 155
+      C1180 150 1160 165 1140 175
+      C1120 165 1100 160 1090 155
+      Z">
+
+      <animateTransform attributeName="transform" type="translate" from="-60 0" to="80 -10" dur="9s" repeatCount="indefinite"></animateTransform>
+
+    </path>
+
+  </g>
+
+  <!-- FOREGROUND -->
+
+  <rect x="0" y="425" width="1600" height="75" fill="#020202"></rect>
+
+  <!-- TERMINAL WINDOW -->
+
+  <rect x="80" y="315" width="570" height="125" rx="8" fill="#080808" stroke="#666666" stroke-width="1"></rect>
+
+  <!-- terminal header -->
+
+  <circle cx="105" cy="335" r="5" fill="#777"></circle>
+  <circle cx="122" cy="335" r="5" fill="#999"></circle>
+  <circle cx="139" cy="335" r="5" fill="#bbb"></circle>
+
+  <!-- terminal text -->
+
+  <g font-family="monospace" font-size="20" fill="#eeeeee">
+
+    <text x="105" y="370">
+      $ ./initialize-software-engineer
+    </text>
+
+    <text x="105" y="400">
+      &gt; backend systems initialized_
+    </text>
+
+    <text x="105" y="425" opacity="0.65">
+      &gt; nevermore.mode = true
+    </text>
+
+  </g>
+
+  <!-- TITLE -->
+
+  <g font-family="Georgia, serif" fill="#ffffff" text-anchor="middle">
+
+    <text x="810" y="355" font-size="52" letter-spacing="7">
+      FATMA EL MAHDI
+    </text>
+
+    <text x="810" y="400" font-family="monospace" font-size="22" letter-spacing="5" opacity="0.85">
+      SOFTWARE ENGINEER
+    </text>
+
+  </g>
+
+</svg>
